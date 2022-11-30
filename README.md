@@ -22,3 +22,6 @@ import random from 'onetoten';
 
 console.log(random()); // 4 🤷‍♂️?
 ```
+
+and ... seriously! SERIOUSLY ... this ... is ... not ... a ... meme
+
