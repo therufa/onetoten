@@ -15,8 +15,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+          
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Test the app
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test
 
   publish-gpr:
     needs: build
@@ -30,16 +38,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-          
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
-
-      - name: Test the app
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: test
           
       - run: npm publish
         env:
