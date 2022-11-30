@@ -1,8 +1,8 @@
 {
   "name": "onetoten",
   "type": "module",
-  "version": "1.0.0",
-  "description": "Prints a number from one to ten",
+  "version": "1.0.1",
+  "description": "Prints a random number between one and ten",
   "main": "index.js",
   "repository": "git@github.com:therufa/onetoten.git",
   "author": "Attila Max Ruf <therufa@gmail.com>",
