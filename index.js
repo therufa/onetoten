@@ -1,3 +1,3 @@
-const onetoten = () => Math.round(Math.random() * 10)
+const onetoten = () => Math.ceil(Math.random() * 10)
 
 export default onetoten;
