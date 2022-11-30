@@ -2,3 +2,23 @@
 npm package which prints a random number between one and ten
 
 not a meme
+
+# Installation
+
+npm:
+```
+$ npm i onetoten
+```
+
+or using yarn:
+```
+$ yarn add onetoten
+```
+
+# How to use
+
+```
+import random from 'onetoten';
+
+console.log(random()); // 4 🤷‍♂️?
+```
